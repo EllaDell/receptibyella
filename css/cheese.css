@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+html{
+    scroll-behavior: smooth;  
+}
+
+section{
+    width: 100%;
+    height: 100vh;    
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+section nav .logo img{
+    width: 200px;
+    cursor: default;
+    margin: 5px;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #597cff;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav ul li a:hover{
+    color: #597cff;
+}
+
+section nav .icon i {
+    font-size: 25px;
+    color: #ff00aa;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-family: sans-serif;
+}
+
+section nav .icon i:hover {
+    color: #f36fdd;
+}
+
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top:140px;
+}
+
+section .main .men_text h1{
+    font-size: 60px;
+    position: relative;
+    top: -180px;
+    left: 20px;
+}
+
+section .main .men_text h1 span{
+    margin-left: 15px;
+    color: #bd1f34;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+    text-decoration: underline;
+}
+
+section .main .muffini2 img{
+    width: 600px;
+    position: sticky;
+    left: 70px;
+    border: 3px solid #bd1f34;
+    box-shadow: 6px 6px #fc3737;
+}
+
+section p{ /*tekst*/
+    width: 650px;
+    text-align: justify;
+    position: relative;
+    left: 123px;
+    bottom: 240px;
+    line-height: 22px;
+}
+
+p.dt{ /*dobar tek*/
+    margin-left: 15px;
+    color: #bd1f34;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+    font-weight: bold;
+}
